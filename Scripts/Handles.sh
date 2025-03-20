@@ -84,7 +84,7 @@ if [ -f "$CM_FILE" ]; then
 fi
 
 install_opkg_distfeeds() {
-    local emortal_def_dir="$GITHUB_WORKSPACE/wrt/package/emortal/default-settings"
+    local emortal_def_dir="$PKG_PATH/emortal/default-settings"
     local distfeeds_conf="$emortal_def_dir/files/99-distfeeds.conf"
 
     if [ -d "$emortal_def_dir" ] && [ ! -f "$distfeeds_conf" ]; then
